@@ -1,4 +1,6 @@
 *.css linguist-detectable=false
+*.min.css linguist-vendored=false
+*.min.js linguist-vendored=false
 *.js linguist-detectable=false
 *.html linguist-detectable=false
 *.py linguist-detectable=true
