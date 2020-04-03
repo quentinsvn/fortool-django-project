@@ -1,0 +1,37 @@
+{% extends "menu.html" %} 
+{% block content %} 
+{% load static %}
+ <!-- Contenue -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1>TipeeeStream |</h1>
+                    <span class="pl-1">Regarder des vidéos pendant 1 minute et gagner des Fortcoins !</span>
+                    <div class="separator mb-5"></div>
+                </div>
+            </div>
+
+            <div class="alert alert-warning" role="alert">N'oubliez pas de mettre votre identifiant Fortool lorsque votre pseudo vous sera demandé sur le site <b>pour bien recevoir vos Fortcoins</b> ! Pour rappel votre identifiant est "<b style="color: red;">FT8753</b>"</div>
+            
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="jumbotron">
+                                <h1>Comment ça marche ?</h1>
+                                <p>Description</p>
+                                <hr class="my-4">
+                                <p class="lead mb-0">
+                                    <a class="btn btn-primary btn-lg" href="https://tipeeestream.com/fortool/donation" role="button" onclick="open(this.href, 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;">Regarder</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- -->
+{%endblock%}

@@ -1,0 +1,93 @@
+{% extends "menu.html" %}
+{% block content %}
+{% load static %}
+<!-- Contenue -->
+<main>
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-12">
+                <h1>Comptes associés</h1>
+                <span class="pl-1">Liste de vos réseaux sociaux associés au site</span>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs separator-tabs ml-0 mb-5" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="first-tab" href="{% url "informations" %}" role="tab" aria-controls="first"
+                    aria-selected="true">MES INFORMATIONS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="second-tab" href="{% url "associatedaccounts" %}" role="tab"
+                    aria-controls="second" aria-selected="false">COMPTES ASSOCIÉS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="third-tab" href="{% url "security" %}" role="tab" aria-controls="third"
+                    aria-selected="false">SÉCURITÉ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="third-tab" href="{% url "payments" %}" role="tab" aria-controls="third"
+                    aria-selected="false">PAIEMENTS</a>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-4 col-12 mb-4">
+                <div class="card d-flex flex-row mb-4"><a class="d-flex" href="#"><img alt="Profile"
+                            src="{% static 'img/concours-discord-cartes-voeux-fortnite-france-6.png' %}"
+                            style="background-color: transparent;"
+                            class="img-thumbnail border-0 m-4 list-thumbnail align-self-center"></a>
+                    <div class="d-flex flex-grow-1 min-width-zero">
+                        <div
+                            class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                            <div class="min-width-zero"><a href="#">
+                                    <p class="list-item-heading mb-1 truncate">QUENTIN</p>
+                                </a>
+                                <p class="mb-2 text-muted text-small">Discord</p><button type="button"
+                                    class="btn btn-xs btn-outline-primary">Modifier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-4 col-12 mb-4">
+                <div class="card d-flex flex-row mb-4"><a class="d-flex" href="#"><img alt="Profile"
+                            src="{% static 'img/Unreal+Engine_eg-logo-filled-1255x1272-0eb9d144a0f981d1cbaaa1eb957de7a3207b31bb.png' %}"
+                            style="background-color: transparent;"
+                            class="img-thumbnail border-0 m-4 list-thumbnail align-self-center"></a>
+                    <div class="d-flex flex-grow-1 min-width-zero">
+                        <div
+                            class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                            <div class="min-width-zero"><a href="#">
+                                    <p class="list-item-heading mb-1 truncate">quenquen147</p>
+                                </a>
+                                <p class="mb-2 text-muted text-small">Epic Games</p><button type="button"
+                                    class="btn btn-xs btn-outline-primary">Modifier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-4 col-12 mb-4">
+                <div class="card d-flex flex-row mb-4"><a class="d-flex" href="#"><img alt="Profile"
+                            src="{% static 'img/youtube.png' %}"
+                            style="background-color: transparent;"
+                            class="img-thumbnail border-0 rounded-circle m-4 list-thumbnail align-self-center"></a>
+                    <div class="d-flex flex-grow-1 min-width-zero">
+                        <div
+                            class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                            <div class="min-width-zero"><a href="#">
+                                    <p class="list-item-heading mb-1 truncate">Quentin</p>
+                                </a>
+                                <p class="mb-2 text-muted text-small">YouTube</p><button type="button"
+                                    class="btn btn-xs btn-outline-primary">Modifier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!-- -->
+{%endblock%}

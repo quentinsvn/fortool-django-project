@@ -1,0 +1,209 @@
+{% extends "menu.html" %} 
+{% block content %} 
+{% load static %}
+ <!-- Contenue -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Tableau de bord</h1>
+                    <div class="separator mb-5"></div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row icon-cards-row d-flex justify-content-center">
+                <div class="col-xs-6 col-lg-3 col-12 mb-4">
+                    <a href="#" class="card">
+                        <div class="card-body text-center">
+                            <i class="glyph-icon iconsmind-Money-2"></i>
+                            <p class="card-text font-weight-semibold mb-0">Mon solde</p>
+                            <p class="lead text-center">30 Fortcoins</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-12 mb-4">
+                    <a href="#" class="card">
+                        <div class="card-body text-center">
+                            <i class="glyph-icon simple-icon-user"></i>
+                            <p class="card-text font-weight-semibold mb-0">Identifiant</p>
+                            <p class="lead text-center">FT8596</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-12 mb-4">
+                    <a href="#" class="card">
+                        <div class="card-body text-center">
+                            <i class="glyph-icon iconsmind-Upgrade"></i>
+                            <p class="card-text font-weight-semibold mb-0">Niveau</p>
+                            <p class="lead text-center">2</p>
+                        </div>
+                    </a>
+                </div>         
+                <div class="col-xs-6 col-lg-3 col-12 mb-4">
+                    <a href="#" class="card">
+                        <div class="card-body text-center">
+                            <i class="glyph-icon iconsmind-Shopping-Cart"></i>
+                            <p class="card-text font-weight-semibold mb-0">Commandes</p>
+                            <p class="lead text-center">16</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Activités récentes -->
+                <div class="col col-md-12 col-lg-6 col-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Activité(s) récente(s)</h5>
+                            <table class="table table-borderless table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">Crédits</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">#FT5896</th>
+                                        <td>15/09/2019</td>
+                                        <td>Lotterie</td>
+                                        <td style="color: red;">-20</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#FT5890</th>
+                                        <td>15/09/2019</td>
+                                        <td>Lotterie</td>
+                                        <td style="color: red;">-20</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#FT5895</th>
+                                        <td>15/09/2019</td>
+                                        <td>Tipeeestream</td>
+                                        <td style="color: green;">+10</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#FT5895</th>
+                                        <td>15/09/2019</td>
+                                        <td>Tipeeestream</td>
+                                        <td style="color: green;">+10</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#FT5895</th>
+                                        <td>15/09/2019</td>
+                                        <td>Tipeeestream</td>
+                                        <td style="color: green;">+10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article -->
+                <div class="col col-lg-3 col-md-12 mb-4 col-12">
+                    <div class="card dashboard-sq-banner justify-content-end">
+                        <div class="card-body justify-content-end d-flex flex-column">
+                            <span class="badge badge-pill badge-theme-3 align-self-start mb-3">ANNONCE</span>
+                            <p class="lead text-white">TITRE</p>
+                            <p class="text-white">Description</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avantages -->
+                <div class="col col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mes avantages</h5>
+                            <span class="badge badge-pill position-absolute badge-top-left-2 mt-3"
+                                style="background-color:#9b59b6; color: white;">PREMIUM</span>
+                            <div class="dashboard-logs">
+                                <table class="table table-sm table-borderless mt-2">
+
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="log-indicator border-success align-middle"></span>
+                                            </td>
+                                            <td>
+                                                <span class="font-weight-medium">Cashback PayPal</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="log-indicator border-success align-middle"></span>
+                                            </td>
+                                            <td>
+                                                <span class="font-weight-medium">3% de chance de gagner</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="log-indicator border-success align-middle"></span>
+                                            </td>
+                                            <td>
+                                                <span class="font-weight-medium">Identifiant personnalisable</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="log-indicator border-success align-middle"></span>
+                                            </td>
+                                            <td>
+                                                <span class="font-weight-medium">Badge premium</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="log-indicator border-success align-middle"></span>
+                                            </td>
+                                            <td>
+                                                <span class="font-weight-medium">Bonus de 5% XP</span>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                </div>
+                                <div class="ps__rail-y" style="top: 0px; height: 270px; right: 0px;">
+                                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 232px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 col-lg-12 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Commandes récentes</h5>
+                            <div class="card d-flex flex-row mb-3 active"><a class="d-flex"
+                                    href="Pages.Product.Detail.html"><img style="width: 150px;" src="{% static 'img/raven.0.jpg' %}"
+                                        alt="Fat Rascal" class="responsive border-0 card-img-left"></a>
+                                <div class="pl-2 d-flex flex-grow-1 min-width-zero">
+                                    <div
+                                        class="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
+                                        <a href="Pages.Product.Detail.html" class="w-40 w-sm-100">
+                                            <p class="list-item-heading mb-0 truncate">Skin Fortnite</p>
+                                        </a>
+                                        <p class="mb-0 text-muted w-15 w-sm-100" style="color: #e74c3c !important;">-100 Fortcoins</p>
+                                        <p class="mb-0 text-muted w-15 w-sm-100">15/09/2019</p>
+                                        <div class="w-10 w-sm-100">
+                                            <span class="badge badge-pill badge-primary">EN COURS</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- -->
+{%endblock%}

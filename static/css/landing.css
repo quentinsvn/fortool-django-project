@@ -1,0 +1,114 @@
+body, html {
+    background-image: url("../img/fond_final3.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.headerTop {
+    padding-top: 20px;
+    margin: none;
+}
+.menuL {
+    padding-left: 0;
+    list-style: none;
+    display: inline;
+}
+
+.menuL li {
+    display: inline;
+}
+
+.logoHead img {
+    width: 30px;
+    margin-right: 5px;
+}
+.textHead img {
+    width: 130px;
+    margin-right: 20px;
+}
+
+.menuL a {
+    color: white !important;
+    padding-right: 30px;
+    text-decoration: none !important;
+}
+
+.menuL a:hover {
+    color: #7f8c8d !important;
+}
+
+.login a {
+    float: right;
+    color: rgb(255, 255, 255);;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    line-height: 24px;
+    padding: 3px 13px 3px;
+    text-decoration: none !important;
+}
+
+.login a:hover {
+    color: #7f8c8d !important;
+    border-color: #7f8c8d;
+}
+.main {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 150px;
+    color: white;
+}
+.slogan h1 {
+    font-size: 70px;
+    padding-bottom: 30px;
+}
+.slogan p {
+    font-size: 20px; 
+    font-weight: 300;
+    color: #bdc3c7;
+    padding-bottom: 20px;
+}
+.image {
+    text-align: center;
+}
+.slogan a {
+    text-decoration: none;
+    background-color: #F76700;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.slogan a:hover {
+    text-decoration: none;
+    background-color: #F76700;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
+    }
+
+.mar li {
+    padding-right: 20px !important;
+}
+    
+@media (max-width: 1000px) {
+    nav.navbar {
+        background: #333 !important;
+    }
+    .slogan h1 {
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .main {
+        margin-top: 100px;
+    }
+}

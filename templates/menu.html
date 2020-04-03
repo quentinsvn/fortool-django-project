@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fortool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="{% static 'favicon.ico' %}" />
+
+    <link rel="stylesheet" href="{% static 'font/iconsmind/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'font/simple-line-icons/css/simple-line-icons.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/vendor/select2.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/bootstrap-float-label.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/select2-bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/perfect-scrollbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/bootstrap-datepicker3.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/dore.dark.orange.min.css' %}" />
+</head>
+
+<body id="app-container" class="ltr rounded menu-sub-hidden sub-hidden">
+    <nav class="navbar fixed-top">
+        <div class="d-flex align-items-center navbar-left">
+            <a href="#" class="menu-button d-none d-md-block">
+                <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                    <rect x="0.48" y="0.5" width="7" height="1" />
+                    <rect x="0.48" y="7.5" width="7" height="1" />
+                    <rect x="0.48" y="15.5" width="7" height="1" />
+                </svg>
+                <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                    <rect x="1.56" y="0.5" width="16" height="1" />
+                    <rect x="1.56" y="7.5" width="16" height="1" />
+                    <rect x="1.56" y="15.5" width="16" height="1" />
+                </svg>
+            </a>
+
+            <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                    <rect x="0.5" y="0.5" width="25" height="1" />
+                    <rect x="0.5" y="7.5" width="25" height="1" />
+                    <rect x="0.5" y="15.5" width="25" height="1" />
+                </svg>
+            </a>
+
+            
+        </div>
+
+        <a class="navbar-logo" href="">
+            <img src="{% static 'img/circleo.png' %}" height="40">
+        </a>
+
+        <div class="navbar-right">
+            <div class="header-icons d-inline-block align-middle">
+                <!-- Accès rapide
+                <div class="position-relative d-none d-sm-inline-block">
+                    <button class="header-icon btn btn-empty" type="button" id="iconMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="simple-icon-grid"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right mt-3  position-absolute" id="iconMenuDropdown">
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsmind-Equalizer d-block"></i>
+                            <span>Paramètres</span>
+                        </a>
+
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsmind-MaleFemale d-block"></i>
+                            <span>Boutique</span>
+                        </a>
+
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsmind-Puzzle d-block"></i>
+                            <span>Commandes</span>
+                        </a>
+
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsmind-Bar-Chart d-block"></i>
+                            <span>Statistiques</span>
+                        </a>
+
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsmind-File-Chart d-block"></i>
+                            <span>Discord</span>
+                        </a>
+
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsmind-Suitcase d-block"></i>
+                            <span>FAQ</span>
+                        </a>
+
+                    </div>
+                </div>
+                -->
+                <button type="button" class="btn btn-primary mb-2" style="font-weight: 700;">30&nbsp;Fortoins</button>
+                <div class="position-relative d-inline-block">
+                    
+                    <button class="header-icon btn btn-empty" type="button" id="notificationButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="simple-icon-bell"></i>
+                        <span class="count">1</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right mt-3 scroll position-absolute"
+                        id="notificationDropdown">
+
+                        <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                            <a href="#">
+                                <img src="{% static 'img/circleo.png' %}" alt="Notification Image"
+                                    class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                            </a>
+                            <div class="pl-3 pr-2">
+                                <a href="#">
+                                    <p class="font-weight-medium mb-1">Vous avez gagné 10 Fortcoins!</p>
+                                    <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="fullScreenButton">
+                    <i class="simple-icon-size-fullscreen"></i>
+                    <i class="simple-icon-size-actual"></i>
+                </button>
+
+            </div>
+
+            <div class="user d-inline-block">
+                <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="name">Quentin</span>
+                    <span>
+                        <img alt="Profile Picture" src="{% static 'img/circleo.png' %}" />
+                    </span>
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-right mt-3">
+                    <a class="dropdown-item" href="#">Mon compte</a>
+                    <a class="dropdown-item" href="#">Mes commandes</a>
+                    <a class="dropdown-item" href="#">Paramètres</a>
+                    <a class="dropdown-item" href="#">Se déconnecter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="main-menu">
+            <div class="scroll">
+                <ul class="list-unstyled">
+                    <li class="{% if request.resolver_match.url_name == "content" %}active{% endif %}">
+                        <a href="{% url "content" %}">
+                            <i class="glyph-icon simple-icon-home"></i>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "tipeeestream" %}active{% endif %}{% if request.resolver_match.url_name == "offerwalls" %}active{% endif %}">
+                        <a href="#win">
+                            <i class="glyph-icon iconsmind-Money-Bag"></i>
+                            <span>Gagner</span>
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "coinflip" %}active{% endif %}{% if request.resolver_match.url_name == "loterie" %}active{% endif %}{% if request.resolver_match.url_name == "upgrade" %}active{% endif %}">
+                        <a href="#games">
+                            <i class="glyph-icon simple-icon-game-controller"></i>
+                            <span>Mini-jeux</span>
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "shop" %}active{% endif %}{% if request.resolver_match.url_name == "commands" %}active{% endif %}">
+                        <a href="{% url "shop" %}">
+                            <i class="iconsmind-Shop-4"></i>
+                            <span>Boutique</span>
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "leaderboard" %}active{% endif %}">
+                        <a href="{% url "leaderboard" %}">
+                            <i class="glyph-icon simple-icon-chart"></i>
+                            <span>Leaderboard</span>
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "informations" %}active{% endif %}{% if request.resolver_match.url_name == "associatedaccounts" %}active{% endif %}{% if request.resolver_match.url_name == "security" %}active{% endif %}{% if request.resolver_match.url_name == "payments" %}active{% endif %}{% if request.resolver_match.url_name == "history" %}active{% endif %}">
+                        <a href="#settings">
+                            <i class="glyph-icon simple-icon-equalizer"></i>
+                            <span>Paramètres</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-menu">
+            <div class="scroll">
+                <ul class="list-unstyled" data-link="win">
+                    <li class="{% if request.resolver_match.url_name == "tipeeestream" %}active{% endif %}">
+                        <a href="{% url "tipeeestream" %}">
+                            <i class="glyph-icon iconsmind-Video-5"></i> Tipeeestream
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "offerwalls" %}active{% endif %}">
+                        <a href="{% url "offerwalls" %}">
+                            <i class="glyph-icon simple-icon-grid"></i> Offerwalls
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled" data-link="games">
+                    <li class="{% if request.resolver_match.url_name == "coinflip" %}active{% endif %}">
+                        <a href="{% url "coinflip" %}">
+                            <i class="glyph-icon iconsmind-Coin"></i> Coin flip
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "loterie" %}active{% endif %}">
+                        <a href="{% url "loterie" %}">
+                            <i class="glyph-icon iconsmind-Ticket"></i> Loterie
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "upgrade" %}active{% endif %}">
+                        <a href="{% url "upgrade" %}">
+                            <i class="glyph-icon iconsmind-Up-4"></i> Upgrade
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled" data-link="settings">
+                    <li class="{% if request.resolver_match.url_name == "informations" %}active{% endif %}">
+                        <a href="{% url "informations" %}">
+                            <i class="glyph-icon iconsmind-Information"></i> Mes informations
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "associatedaccounts" %}active{% endif %}">
+                        <a href="{% url "associatedaccounts" %}">
+                            <i class="glyph-icon simple-icon-link"></i> Comptes associés
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "security" %}active{% endif %}">
+                        <a href="{% url "security" %}">
+                            <i class="glyph-icon simple-icon-lock"></i> Sécurité
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "payments" %}active{% endif %}">
+                        <a href="{% url "payments" %}">
+                            <i class="glyph-icon simple-icon-credit-card"></i> Méthodes de paiements
+                        </a>
+                    </li>
+                    <li class="{% if request.resolver_match.url_name == "history" %}active{% endif %}">
+                        <a href="{% url "history" %}">
+                            <i class="glyph-icon simple-icon-clock"></i> Historique de connexions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {% block content %} 
+        <!-- Content Goes here -->
+    {% endblock content %}
+
+    <script src="{% static 'js/vendor/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/vendor/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/vendor/mousetrap.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'js/vendor/select2.full.js' %}"></script>
+    <script src="{% static 'js/dore.script.js' %}"></script>
+    <script src="{% static 'js/scripts.single.theme.js' %}"></script>
+</body>
+
+</html>

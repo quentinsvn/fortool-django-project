@@ -1,0 +1,44 @@
+{% extends "menu.html" %} 
+{% block content %} 
+{% load static %}
+ <!-- Contenue -->
+    <main>
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h1>Boutique |</h1>
+                    <div class="float-md-right">
+                        <button type="button" class="btn btn-primary">
+                            30 Fortcoins
+                        </button>
+                    </div>
+                    <span class="pl-1">Achetez des skins et bien plus à l'aide de vos Fortoins !</span>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs separator-tabs ml-0 mb-5" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="first-tab" href="{% url "shop" %}" role="tab" aria-controls="first"
+                        aria-selected="true">CATALOGUE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="second-tab" href="{% url "commands" %}" role="tab"
+                        aria-controls="second" aria-selected="false">MES COMMANDES</a>
+                </li>
+            </ul>
+            
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- -->
+{%endblock%}

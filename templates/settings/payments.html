@@ -1,0 +1,50 @@
+{% extends "menu.html" %}
+{% block content %}
+{% load static %}
+<!-- Contenue -->
+<main>
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-12">
+                <h1>Paiements |</h1>
+                <span class="pl-1">Gérer vos méthodes de paiements</span>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs separator-tabs ml-0 mb-5" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="first-tab" href="{% url "informations" %}" role="tab" aria-controls="first"
+                    aria-selected="true">MES INFORMATIONS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="second-tab" href="{% url "associatedaccounts" %}" role="tab"
+                    aria-controls="second" aria-selected="false">COMPTES ASSOCIÉS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="third-tab" href="{% url "security" %}" role="tab" aria-controls="third"
+                    aria-selected="false">SÉCURITÉ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="third-tab" href="{% url "payments" %}" role="tab" aria-controls="third"
+                    aria-selected="false">PAIEMENTS</a>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="mb-4">Méthodes de paiements</h5>
+                        <label class="form-group has-float-label"><input class="form-control"
+                                data-kwimpalastatus="alive" type="email" data-kwimpalaid="1569101486002-10">
+                            <span>Adresse e-mail Paypal</span></label>
+                            <button type="submit" class="btn btn-primary mb-0" style="float: right;">Confirmer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!-- -->
+{%endblock%}
